@@ -1,13 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var products = require('../data/products.json');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/about', function (req, res, next) {
-  res.render('about', { title: 'Hallo  welcome to About' });
+  res.render('index', { title: 'Toko Online Sederhana', products: products });
 });
 
 module.exports = router;

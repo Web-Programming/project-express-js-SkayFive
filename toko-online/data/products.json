@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Gaming",
+    "price": 15000000,
+    "description": "Laptop berperforma tinggi untuk bermmain Game dengan Lancar"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone 5G",
+    "price": 7000000,
+    "description": "Ponsel pintar dengan dukungan jaringan 5G dan kamera jernih"
+  },
+  {
+    "id": 3,
+    "name": "Headset Wireless",
+    "price": 1200000,
+    "description": "Headset nirkabel dengan kualitas suara jernih dan bass kuat"
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch",
+    "price": 2500000,
+    "description": "Jam tangan pintar dengan fitur kesehatan dan notifikasi real-time"
+  },
+  {
+    "id": 5,
+    "name": "Keyboard Mechanical",
+    "price": 950000,
+    "description": "Keyboard mekanik dengan switch tactile untuk pengalaman mengetik lebih baik"
+  },
+  {
+    "id": 6,
+    "name": "Kamera Mirrorless",
+    "price": 9500000,
+    "description": "Kamera ringan dengan kualitas gambar profesional dan lensa interchangeable"
+  },
+  {
+    "id": 7,
+    "name": "Tablet Android",
+    "price": 4500000,
+    "description": "Tablet serbaguna untuk belajar, bekerja, dan hiburan"
+  },
+  {
+    "id": 8,
+    "name": "Drone Kamera",
+    "price": 6800000,
+    "description": "Drone dengan kamera 4K untuk fotografi dan videografi udara"
+  },
+  {
+    "id": 9,
+    "name": "Mesin Cuci Otomatis",
+    "price": 3700000,
+    "description": "Mesin cuci hemat energi dengan fitur cuci cepat dan kering otomatis"
+  },
+  {
+    "id": 10,
+    "name": "AC Inverter",
+    "price": 5200000,
+    "description": "Pendingin ruangan hemat listrik dengan teknologi inverter"
+  }
+]

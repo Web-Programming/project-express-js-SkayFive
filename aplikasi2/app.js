@@ -17,6 +17,9 @@ app.post('/submit', (req, res) => {
   res.send(`Hello, ${name}!`); // pakai backtick
 });
 
+// Serving Static File
+app.use(express.static('public'));
+
 app.listen(port, () => {
   console.log(`server running at http://localhost:${port}/index.html`); // pakai backtick
 });
