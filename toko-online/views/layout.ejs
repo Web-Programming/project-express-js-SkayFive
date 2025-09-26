@@ -2,86 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    <link rel="stylesheet"href="http://localhost:3000/bootstrap/css/bootstrap.min.css" />
   </head>
   <body>
     <!-- NAVBAR WEBSITE START -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img
-            src="../images/tokoonline.jpg"
-            alt="Logo"
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Toko Online
-        </a>
-        <!-- <a class="navbar-brand" href="#">Toko Online</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
+          <img src="../images/tokoonline.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"
+          /> Toko Online </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Barang</a>
-              <!-- </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li> -->
-            </li>
-
+          <li class="nav-item">
+        <a class="nav-link" href="#">Barang</a>
+          </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="true" href="#">About Me</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <!-- Bagian Search atauPencarian Start -->
+          <form action="/search" method="get" class="d-flex" role="search">
+            <input class="form-control me-2" type="text" name="q" placeholder="cari produk..." aria-label="Search"
+            value="<%= typeof query !== 'undefined' ? query : '' %>"/>
+              <button class="btn btn-outline-success" type="submit"> Search </button>
+            </form>
+          <!-- Bagian Search atauPencarian Ends -->
         </div>
       </div>
     </nav>
     <%- body %>
-    <script src="bootstrap/css/bootstrap.min.css"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- NAVBAR ENDS  -->
+      <script src="bootstrap/css/bootstrap.min.css"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- NAVBAR ENDS  -->
   </body>
 </html>
