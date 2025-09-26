@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   </head>
   <body>
+    <!-- NAVBAR WEBSITE START -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="../images/tokoonline.jpg"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Toko Online
+        </a>
+        <!-- <a class="navbar-brand" href="#">Toko Online</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,15 +31,15 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
+              <a class="nav-link" href="#">Barang</a>
+              <!-- </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -47,9 +58,11 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
+            </li> -->
             </li>
+
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" aria-current="true" href="#">About Me</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -68,5 +81,7 @@
     </nav>
     <%- body %>
     <script src="bootstrap/css/bootstrap.min.css"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- NAVBAR ENDS  -->
   </body>
 </html>

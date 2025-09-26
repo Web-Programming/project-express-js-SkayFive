@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.w-65 {
+  width: 65%;
+}
