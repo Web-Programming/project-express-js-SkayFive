@@ -1,13 +1,12 @@
-var express = require('express');
-var router = express.Router();
-var products = require('../data/products.json');
+var products = require('../../data/products.json');
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Toko Online Sederhana', products: products });
-});
+const index = (req, res) => {
+  res.render('index', 
+    { title: 'Toko Online Sederhana', 
+        products: products });
+}; 
 
-router.get("/search", function(req,res, next){
+const search = (req,res, next) => {
 //tulis kode untuk mendapatkan query pencarian 'q' dari req.query
 const q = req.query.q ? req.query.q.toLowerCase():"";
 //filter array 'products berdasarkan q'
@@ -27,6 +26,6 @@ res.render("index", {
     products: filteredProducts,
     query: q
   });
-});
+};
 
-module.exports = router;
+module.exports = { index, search}; 

@@ -3,7 +3,9 @@
     "id": 1,
     "name": "Laptop Gaming",
     "price": 15000000,
-    "description": "Laptop berperforma tinggi untuk bermmain Game dengan Lancar"
+    "description": "Laptop berperforma tinggi untuk bermmain Game dengan Lancar",
+    "image" : "laptop3.jpg"
+
   },
   {
     "id": 2,
