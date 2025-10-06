@@ -7,11 +7,11 @@ const index = (req, res) => {
 }; 
 
 const search = (req,res, next) => {
-//tulis kode untuk mendapatkan query pencarian 'q' dari req.query
-const q = req.query.q ? req.query.q.toLowerCase():"";
-//filter array 'products berdasarkan q'
-let filteredProducts;
-if (q === "") {
+  //tulis kode untuk mendapatkan query pencarian 'q' dari req.query
+  const q = req.query.q ? req.query.q.toLowerCase():"";
+  //filter array 'products berdasarkan q'
+  let filteredProducts;
+  if (q === "") {
   //Jika query kosong tampilkan semua product
   filteredProducts = products;
 } else {
@@ -20,8 +20,8 @@ if (q === "") {
     product.name.toLocaleLowerCase().includes(q)
   );
 }
-// kirim hasil filter ke view 'index' atau view 'search-result' baru
-res.render("index", {
+  // kirim hasil filter ke view 'index' atau view 'search-result' baru
+  res.render("index", {
     title: "Hasil Pencarian",
     products: filteredProducts,
     query: q
