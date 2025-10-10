@@ -1,6 +1,12 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-var mainControllers = require('../controllers/main');
+var mainControllers = require("../controllers/main");
+
+//Home
+router.get("/", mainControllers.index);
+//Search
+// router.get("/search", mainControllers.search);
+module.exports = router;
 
 /* GET home page. */
 // router.get('/', function (req, res, next) {
@@ -29,9 +35,4 @@ var mainControllers = require('../controllers/main');
 //   });
 // });
 
-//Home
-router.get("/", mainControllers.index);
-//Search
-router.get("/search", mainControllers.search);
 
-module.exports = router;

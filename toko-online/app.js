@@ -3,10 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+// Panggil file koneksi database
+require("./app_toko_online/models/db")
+
 
 // Perbaikan Ke Dua
 var indexRouter = require('./app_toko_online/routes/index'); 
 var usersRouter = require('./app_toko_online/routes/users');
+var productRouter = require("./app_toko_online/routes/product"); // letakan di atas agar rapi
 var engine = require('ejs-blocks'); // menggunakan ejs blocks
 var app = express();
 
@@ -29,7 +33,6 @@ app.use(
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-var productRouter = require("./app_toko_online/routes/product"); // letakan di atas agar rapi
 app.use("/product", productRouter);
 
 // catch 404 and forward to error handler
