@@ -80,7 +80,7 @@ const create = async(req, res) => {
 };
 
 //read one /detail product
-const detailproduk = async(eq, res) => {
+const detailproduk = async(req, res) => {
     try{
         const productId = req.params.id;
         const product = await Product.findById(productId);
