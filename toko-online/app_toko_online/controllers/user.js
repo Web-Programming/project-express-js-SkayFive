@@ -8,7 +8,7 @@ exports.test  = (req, res) => {
 }
 
 //CRUD CONTROLLER UNTUK USER
-//Read All - Mengambil semua Data  User
+//Read All - Mengambil semua Data User
 const all = async (req, res) => {
     try{
         const users = await User.find({}).select('-password');

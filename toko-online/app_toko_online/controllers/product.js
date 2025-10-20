@@ -93,7 +93,7 @@ const detailproduk = async(req, res) => {
         }
         res.status(200).json({
             status : true,
-            message : "Detail Produk Tidak Di temukan",
+            message : "Detail Produk Ditemukan",
             data : product
         });
     } catch (err) {
@@ -130,7 +130,7 @@ const update = async(eq, res) => {
     }
 };
 
-const remove = async(eq, res) => {
+const remove = async(req, res) => {
     try{
         //hapus menggunakan method FindByIdAndDelete
         const product = await Product.findByIdAndDelete(req.params.id);
@@ -140,7 +140,7 @@ const remove = async(eq, res) => {
                 status : false, 
                 message : "Produk Tidak Ditemukan"
             });
-        }else{
+        } else {
             // Kirim respon sukses
             res.status(200).json({
                 status : true,
@@ -148,7 +148,7 @@ const remove = async(eq, res) => {
             });
         }
     }catch (err) {
-        if(err.name  === 'CasError'){
+        if(err.name  === 'CastError'){
             res.status(400).json({
                 status : false,
                 message : "Format ID tidak valid"
@@ -163,4 +163,4 @@ const remove = async(eq, res) => {
 };
 
 module.exports = { index, detail, all, create, detailproduk,
-    update, remove };
+    update, remove }
