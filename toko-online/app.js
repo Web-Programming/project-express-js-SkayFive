@@ -40,7 +40,7 @@ app.use('/users', usersRouter);
 app.use("/product", productRouter);
 app.use("/api/produk", apiProductRouter); // daftarkan route api
 app.use("/api/user", apiUserRouter);
-app.use("/api/order", apiOrderRouter);
+app.use("/api/orders", apiOrderRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
